@@ -11,11 +11,20 @@ RSpec.describe "Static_pages", type: :request do
   end
 
 
-discribe "Help page" do
+describe "Help page" do
 
   it "should have the content 'Help'" do
-      visit 'static_pages/help'
-      expect(page).to have_content('Help)
+      visit '/static_pages/help'
+      expect(page).to have_content('Help')
     end
   end
+
+  describe "About page" do
+    it "shoule habe the content 'About Us'" do
+    visit '/static_pages_/about'
+    expect(page).to have_content('About us')
+  end
+ end
 end
+
+
