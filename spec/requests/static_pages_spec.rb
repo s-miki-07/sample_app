@@ -9,6 +9,13 @@ RSpec.describe "Static_pages", type: :request do
        expect(page).to have_content("Sample App")
     end
   end
+
+
+discribe "Help page" do
+
+  it "should have the content 'Help'" do
+      visit 'static_pages/help'
+      expect(page).to have_content('Help)
+    end
+  end
 end
-
-
