@@ -29,10 +29,10 @@ describe "Help page" do
     end
   end
 
-describe "About page" do
-     it "should have the content 'about'" do
-     visit '/static_pages/about'
-    expect(page).to have_content('about')
+  describe "About page" do
+    it "shoule habe the content 'About Us'" do
+    visit '/static_pages/about'
+    expect(page).to have_content('About')
   end
 
   it "shouled have the title 'about'" do
