@@ -21,8 +21,8 @@ describe "Help page" do
 
   describe "About page" do
     it "shoule habe the content 'About Us'" do
-    visit '/static_pages_/about'
-    expect(page).to have_content('About us')
+    visit '/static_pages/about'
+    expect(page).to have_content('About')
   end
  end
 end
