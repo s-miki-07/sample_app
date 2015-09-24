@@ -9,7 +9,7 @@ RSpec.describe "Static_pages", type: :request do
        expect(page).to have_content("Sample App")
     end
 
-   it "shoule have the title 'home'" do
+   it "shouled have the title 'home'" do
        visit '/static_pages/home'
        expect(page).to have_title("Ruby on Rails Tutorial Sample App | Home")  
     end
@@ -18,26 +18,26 @@ RSpec.describe "Static_pages", type: :request do
 
 describe "Help page" do
 
-  it "should have the content 'Help'" do
+  it "should have the content 'help'" do
       visit '/static_pages/help'
       expect(page).to have_content('Help')
     end
 
-  it "shoule have the title 'home'" do
-       visit '/static_pages/home'
-       expect(page).to have_title("Ruby on Rails Tutorial Sample App | Home")  
+  it "shouled have the title 'help'" do
+       visit '/static_pages/help'
+       expect(page).to have_title("Ruby on Rails Tutorial Sample App | Help")  
     end
   end
 
-  describe "About page" do
-    it "shoule habe the content 'About Us'" do
-    visit '/static_pages_/about'
-    expect(page).to have_content('About us')
+describe "About page" do
+     it "should have the content 'about'" do
+     visit '/static_pages/about'
+    expect(page).to have_content('about')
   end
 
-  it "shoule have the title 'home'" do
-       visit '/static_pages/home'
-       expect(page).to have_title("Ruby on Rails Tutorial Sample App | Home")  
+  it "shouled have the title 'about'" do
+       visit '/static_pages/about'
+       expect(page).to have_title("Ruby on Rails Tutorial Sample App | About us")  
     end
  end
 end
