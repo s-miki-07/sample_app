@@ -30,12 +30,13 @@ describe "Help page" do
   end
 
   describe "About page" do
-    it "shoule habe the content 'About Us'" do
+    it "shoule have the content 'About Us'" do
     visit '/static_pages/about'
     expect(page).to have_content('About')
   end
 
-  it "shouled have the title 'about'" do
+
+  it "shouled have the title 'About Us'" do
        visit '/static_pages/about'
        expect(page).to have_title("Ruby on Rails Tutorial Sample App | About us")  
     end
