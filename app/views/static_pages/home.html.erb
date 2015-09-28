@@ -1,20 +1,6 @@
 <% provide(:title,'Home') %>
-<!DOCTYPE html>
-<html>
- <head>
-   <title>Ruby on Rails Tutorial Sample App | <%= yield(:title) %></title>
- </head>
- <body>
 <h1>Sample App</h1>
 <p>This is the home page for the
 <a href="http://raisltutorial.jp/">Ruby on Rauls Tutorial</a> sample application.
 </p>
-<a href="http://raisltutorial.jp/">Ruby on Rauls Tutorial</a>
-it "should have the right title" do
-   visit '/static_pages/home'
-   expect(page).to have_title("Ruby on Rails Tutorial Sample App | Home")
-end 
-<a href="http://raisltutorial.jp/">Ruby on Rauls Tutorial</a>
- </body>
-</htmL>
 
