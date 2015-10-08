@@ -25,3 +25,7 @@ doc/
 .idea
 .secret
 
+# Ignore Spring files.
+/spring/*.pid
+
+
