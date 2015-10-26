@@ -1,0 +1,9 @@
+/usr/bin/ruby2.2 -r ./siteconf20151009-3334-wrfygr.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+make "DESTDIR=" install
