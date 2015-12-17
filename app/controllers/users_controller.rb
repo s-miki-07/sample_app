@@ -6,4 +6,17 @@ class UsersController < ApplicationController
   def new
     @user = User.new
   end
+
+  def create
+    @iser = User.new(paramas[:user])
+    if @user.sabe
+
+      #Handle a succellful save.
+
+    else
+
+      render 'new'
+
+    end
+ end
 end
