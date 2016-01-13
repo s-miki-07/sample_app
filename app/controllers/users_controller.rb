@@ -5,11 +5,12 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
+
   end
 
   def create
-    @iser = User.new(paramas[:user])
-    if @user.sabe
+    @user = User.new(user_paramas)
+    if @user.save
 
       #Handle a succellful save.
 
@@ -17,6 +18,14 @@ class UsersController < ApplicationController
 
       render 'new'
 
-    end
  end
+
+  private
+
+    def user_params
+      params.require(:user).permit(:name, :email, :password, :password_confirmation)
+
+      end
+
+  end
 end
