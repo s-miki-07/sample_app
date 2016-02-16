@@ -1,6 +1,4 @@
 @import "bootstrap-sprockets";
-
-
 @import "bootstrap";
 
 $light-gray: #777;
@@ -21,9 +19,8 @@ $gray-medium-light: "#eaeaea";
   margin-top: 45px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  @include box-sizing;
+   box-sizing: border-box;
 }
-
 
 /* universal */
 body {
